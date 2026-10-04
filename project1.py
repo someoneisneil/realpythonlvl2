@@ -47,7 +47,7 @@ def make_sure():
     x = input("plz type a sentence you want to encode: ")
     if x == "" :
         print ("sorry didn't get that PLAESE RETRY")                
-        x = "I im typing this for no reason"
+        make_sure()
     else:
         print("i got yout message :", x)
 
@@ -55,34 +55,43 @@ make_sure()
 
 print()
 
-x_even_odd = even_odd_swap(x)
-x_rev = reverse(x)
-x_rev_word = reverse_word(x)
-x_swap_mid = swap_middle(x)
-x_swap_mid_rev = swap_mid_rev(x)
+def main():
+    x_even_odd = even_odd_swap(x)
+    x_rev = reverse(x)
+    x_rev_word = reverse_word(x)
+    x_swap_mid = swap_middle(x)
+    x_swap_mid_rev = swap_mid_rev(x)
 
-print("encoded version")
+    print("encoded version")
 
-print("1.", x_even_odd)
+    print("1.", x_even_odd)
 
-print("2.", x_rev)
+    print("2.", x_rev)
 
-print("3.", x_rev_word)
+    print("3.", x_rev_word)
 
-print("4.", x_swap_mid)
+    print("4.", x_swap_mid)
 
-print("5.", x_swap_mid_rev)
+    print("5.", x_swap_mid_rev)
 
-print()
+    print()
 
-print("decoded verion")
+    print("decoded verion")
 
-print("1.", even_odd_swap(x_even_odd))
-  
-print("2.", reverse(x_rev))
+    print("1.", even_odd_swap(x_even_odd))  
+    
+    print("2.", reverse(x_rev))  
+    
+    print("3.", reverse_word(x_rev_word))  
+    
+    print("4.", swap_mid_rev(x_swap_mid_rev))  
+    
+    print("5.", swap_middle(x_swap_mid)) 
 
-print("3.", reverse_word(x_rev_word))
 
-print("4.", swap_mid_rev(x_swap_mid_rev))
+#main()
+#def ask_if_want_to_encode_again():
+ #   print("1.again/retry")
+  #  print("2.exit")
+   # input()
 
-print("5.", swap_middle(x_swap_mid))
