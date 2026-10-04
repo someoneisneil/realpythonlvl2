@@ -40,13 +40,18 @@ def reverse_word(x):
         s = s+reverse(words[kk])+' '
     return s
 
-x = input("plz type a sentence you want to encode: ")
 
-if x == "" :
-    print ("sorry didn't get that so im deafulting to : I im typing this for no reason ")                
-    x = "I im typing this for no reason"
-else:
-    print("i got yout message :", x)
+
+def make_sure():
+    global x
+    x = input("plz type a sentence you want to encode: ")
+    if x == "" :
+        print ("sorry didn't get that PLAESE RETRY")                
+        x = "I im typing this for no reason"
+    else:
+        print("i got yout message :", x)
+
+make_sure()
 
 print()
 
