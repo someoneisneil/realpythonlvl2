@@ -1,12 +1,38 @@
+import time
 import datetime as dt
 import time
 from zoneinfo import ZoneInfo as zi
 
 cali_tz = zi("America/Los_Angeles")
 cali_time = dt.datetime.now(cali_tz)
-
+print()
+print()
+print()
 print("this is running on California Time:",
       cali_time.strftime("%Y-%m-%d %I:%M:%S %p %Z"))
+time.sleep(3)
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+
 print('Welcome to your birthday countdown')
 
 while True:
@@ -37,8 +63,13 @@ weekday_names = ['Monday', 'Tuesday', 'Wednesday',
                  'Thursday', 'Friday', 'Saturday', 'Sunday']
 weekday_num = date_birth.weekday()
 print('You are', age, 'years old and may have forgotten which day of the week it was ...')
-print('But I can tell you ... it was a ...', end=' ')
+time.sleep(1.5)
+print('But I can tell you ...', end='', flush=True)
+time.sleep(1.5)
+print( ' it was a ...', end='', flush=True)
+time.sleep(1.5)
 print(weekday_names[weekday_num])
+time.sleep(1.5)
 
 thisyear = current_time.year
 
@@ -55,13 +86,15 @@ else:
     except ValueError:
         next_bday = dt.datetime(thisyear+1, 3, 1, tzinfo=cali_tz)
 
-print('Your next birthday will be on ...', end=' ')
+print('Your next birthday will be on ...', end=' ', flush=True)
+time.sleep(1.5)
 print(next_bday.strftime("%Y-%m-%d"))
-print()
-print('That will be a ...', end=' ')
+time.sleep(1.5)
+print('That will be a ...', end=' ', flush=True)
+time.sleep(1.5)
 weekday_num = next_bday.weekday()
 print(weekday_names[weekday_num])
-
+time.sleep(1.5)
 print()
 print()
 
