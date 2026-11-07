@@ -66,7 +66,7 @@ print('You are', age, 'years old and may have forgotten which day of the week it
 time.sleep(1.5)
 print('But I can tell you ...', end='', flush=True)
 time.sleep(1.5)
-print( ' it was a ...', end='', flush=True)
+print(' it was a ...', end='', flush=True)
 time.sleep(1.5)
 print(weekday_names[weekday_num])
 time.sleep(1.5)
